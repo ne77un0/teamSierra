@@ -10,7 +10,8 @@ import UIKit
 
 class AttivitaTableViewController: UITableViewController {
     
-    var attivitaName =  ["Cinema", "Music", "Sport"]
+    var attivitaName =  ["Cinema", "Music", "Sport","Food","Shopping"]
+    var attivitaImage = ["cinema.jpg","music.jpg","sport.jpg","food.jpg","shopping.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class AttivitaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = attivitaName[indexPath.row]
+        cell.imageView?.image = UIImage(named: attivitaImage[indexPath.row])
 
         return cell
     }

@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="-212" y="-645"/>
         </scene>
-        <!--Dettagli-->
+        <!--Dettagli evento-->
         <scene sceneID="Cb4-4s-28t">
             <objects>
-                <viewController id="FPg-88-0oh" customClass="DettagliViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dettagli evento" id="FPg-88-0oh" customClass="DettagliViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jPi-e5-W3S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,15 +100,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sde-CO-FWT">
-                                <rect key="frame" x="76" y="74" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sde-CO-FWT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sde-CO-FWT" firstAttribute="top" secondItem="Rco-Af-MvE" secondAttribute="top" id="FTy-WF-1kZ"/>
+                            <constraint firstItem="sde-CO-FWT" firstAttribute="leading" secondItem="Rco-Af-MvE" secondAttribute="leading" id="TJB-xI-5fw"/>
+                            <constraint firstItem="Rco-Af-MvE" firstAttribute="trailing" secondItem="sde-CO-FWT" secondAttribute="trailing" id="hq5-uc-XPV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rco-Af-MvE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dettagli" id="uGG-TY-UQn"/>
@@ -120,7 +124,7 @@
             </objects>
             <point key="canvasLocation" x="1577" y="-1404"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Attività-->
         <scene sceneID="oV7-do-wvm">
             <objects>
                 <tableViewController id="Sgx-0Y-eqm" customClass="AttivitaTableViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +161,7 @@
                             <outlet property="delegate" destination="Sgx-0Y-eqm" id="XAv-xu-eCk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dEd-LK-Hh6"/>
+                    <navigationItem key="navigationItem" title="Attività" id="dEd-LK-Hh6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U6-xc-1Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
