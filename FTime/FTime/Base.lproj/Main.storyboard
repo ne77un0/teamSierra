@@ -166,9 +166,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4xW-p1-mHn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mfF-x2-I4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="onk-jA-XVO" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="iS4-eq-hyV">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="1" id="iS4-eq-hyV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,8 +178,12 @@
                         <segue destination="eAY-jN-hB2" kind="relationship" relationship="viewControllers" id="y1r-ka-Qam"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfF-x2-I4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1286" y="-644"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="30" height="30"/>
+    </resources>
 </document>
