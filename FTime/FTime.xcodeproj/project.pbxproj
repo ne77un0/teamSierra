@@ -14,6 +14,7 @@
 		757673342167716D00DF6D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757673322167716D00DF6D2A /* Main.storyboard */; };
 		757673362167716D00DF6D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757673352167716D00DF6D2A /* Assets.xcassets */; };
 		757673392167716D00DF6D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757673372167716D00DF6D2A /* LaunchScreen.storyboard */; };
+		F4EE57E6216CC0C300410EFE /* DettagliViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EE57E5216CC0C300410EFE /* DettagliViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		757673352167716D00DF6D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757673382167716D00DF6D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7576733A2167716D00DF6D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EE57E5216CC0C300410EFE /* DettagliViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettagliViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				7576732E2167716D00DF6D2A /* AppDelegate.swift */,
 				757673322167716D00DF6D2A /* Main.storyboard */,
+				F4EE57E5216CC0C300410EFE /* DettagliViewController.swift */,
 				7535E0CC216CAF2B00A60086 /* AttivitaTableViewController.swift */,
 				7535E0CE216CAFA600A60086 /* PreferitiTableViewController.swift */,
 				7535E0D0216CAFC900A60086 /* ImpostazioniViewController.swift */,
@@ -144,6 +147,7 @@
 				7535E0D1216CAFC900A60086 /* ImpostazioniViewController.swift in Sources */,
 				7576732F2167716D00DF6D2A /* AppDelegate.swift in Sources */,
 				7535E0CF216CAFA600A60086 /* PreferitiTableViewController.swift in Sources */,
+				F4EE57E6216CC0C300410EFE /* DettagliViewController.swift in Sources */,
 				7535E0CD216CAF2B00A60086 /* AttivitaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
