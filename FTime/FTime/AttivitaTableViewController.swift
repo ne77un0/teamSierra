@@ -9,11 +9,7 @@
 import UIKit
 
 class AttivitaTableViewController: UITableViewController {
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        tabBarItem = UITabBarItem(title: "Attività", image: UIImage(named: "attivita_icon"), tag: 1)
-    }
+    
     
     
     override func viewDidLoad() {

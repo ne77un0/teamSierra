@@ -10,6 +10,7 @@ import UIKit
 
 class PreferitiTableViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
