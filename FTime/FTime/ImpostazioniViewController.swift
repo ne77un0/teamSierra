@@ -1,14 +1,14 @@
 //
-//  DettaglioEvento.swift
+//  ImpostazioniViewController.swift
 //  FTime
 //
-//  Created by mincolellinoemi on 09/10/18.
+//  Created by ranaldogiovanni on 09/10/18.
 //  Copyright © 2018 ranaldogiovanni. All rights reserved.
 //
 
 import UIKit
 
-class DettaglioEvento: UIViewController {
+class ImpostazioniViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

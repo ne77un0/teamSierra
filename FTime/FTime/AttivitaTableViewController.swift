@@ -1,15 +1,21 @@
 //
-//  ListaEventi.swift
+//  AttivitaTableViewController.swift
 //  FTime
 //
-//  Created by mincolellinoemi on 09/10/18.
+//  Created by ranaldogiovanni on 09/10/18.
 //  Copyright © 2018 ranaldogiovanni. All rights reserved.
 //
 
 import UIKit
 
-class ListaEventi: UITableViewController {
+class AttivitaTableViewController: UITableViewController {
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        tabBarItem = UITabBarItem(title: "Attività", image: UIImage(named: "attivita_icon"), tag: 1)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
