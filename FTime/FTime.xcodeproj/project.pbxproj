@@ -11,6 +11,8 @@
 		757673342167716D00DF6D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757673322167716D00DF6D2A /* Main.storyboard */; };
 		757673362167716D00DF6D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757673352167716D00DF6D2A /* Assets.xcassets */; };
 		757673392167716D00DF6D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757673372167716D00DF6D2A /* LaunchScreen.storyboard */; };
+		F4A40135216C924700E0E27E /* ListaEventi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A40134216C924700E0E27E /* ListaEventi.swift */; };
+		F4A40137216C928600E0E27E /* DettaglioEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A40136216C928600E0E27E /* DettaglioEvento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		757673352167716D00DF6D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757673382167716D00DF6D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7576733A2167716D00DF6D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A40134216C924700E0E27E /* ListaEventi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEventi.swift; sourceTree = "<group>"; };
+		F4A40136216C928600E0E27E /* DettaglioEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEvento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				7576732E2167716D00DF6D2A /* AppDelegate.swift */,
 				757673322167716D00DF6D2A /* Main.storyboard */,
+				F4A40136216C928600E0E27E /* DettaglioEvento.swift */,
+				F4A40134216C924700E0E27E /* ListaEventi.swift */,
 				757673352167716D00DF6D2A /* Assets.xcassets */,
 				757673372167716D00DF6D2A /* LaunchScreen.storyboard */,
 				7576733A2167716D00DF6D2A /* Info.plist */,
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A40135216C924700E0E27E /* ListaEventi.swift in Sources */,
+				F4A40137216C928600E0E27E /* DettaglioEvento.swift in Sources */,
 				7576732F2167716D00DF6D2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
