@@ -1,18 +1,15 @@
 //
-//  AttivitaTableViewController.swift
+//  EventiTableViewController.swift
 //  FTime
 //
-//  Created by ranaldogiovanni on 09/10/18.
+//  Created by ranaldogiovanni on 10/10/18.
 //  Copyright © 2018 ranaldogiovanni. All rights reserved.
 //
 
 import UIKit
 
-class AttivitaTableViewController: UITableViewController {
-    
-    var attivitaName =  ["Cinema", "Music", "Sport","Food","Shopping"]
-    var attivitaImage = ["cinema.jpg","music.jpg","sport.jpg","food.jpg","shopping.jpg"]
-    
+class EventiTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,34 +24,24 @@ class AttivitaTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return attivitaName.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = attivitaName[indexPath.row]
-        cell.imageView?.image = UIImage(named: attivitaImage[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if(segue.identifier == "segue"){
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let wc = segue.destination as! EventiTableViewController
-                    //wc.name = attivitaName[indexPath.row]
-            }
-        }
-    }
-    
-    
-    
+    */
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

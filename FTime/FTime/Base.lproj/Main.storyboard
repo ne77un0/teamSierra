@@ -61,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swe-3F-dKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-645"/>
+            <point key="canvasLocation" x="542" y="-645"/>
         </scene>
         <!--Preferiti-->
         <scene sceneID="Ud9-Tc-u38">
@@ -83,7 +83,7 @@
         <!--Root View Controller-->
         <scene sceneID="rXP-lp-eQq">
             <objects>
-                <tableViewController id="29k-fS-Iqg" sceneMemberID="viewController">
+                <tableViewController id="29k-fS-Iqg" customClass="EventiTableViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sMV-vF-u9G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,23 +110,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdh-Fr-Y9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="-1392"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TZ0-J6-T3T">
-            <objects>
-                <navigationController id="KcU-9K-7dX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dX8-oc-YFp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="29k-fS-Iqg" kind="relationship" relationship="rootViewController" id="slb-7J-E30"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="veW-bI-hcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1345" y="-1404"/>
+            <point key="canvasLocation" x="1284" y="-1405"/>
         </scene>
         <!--Dettagli evento-->
         <scene sceneID="Cb4-4s-28t">
@@ -177,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEu-nk-MtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791" y="-1392"/>
+            <point key="canvasLocation" x="2030" y="-1403"/>
         </scene>
         <!--Attività-->
         <scene sceneID="oV7-do-wvm">
@@ -207,7 +191,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KcU-9K-7dX" kind="show" identifier="segue" id="VTy-Kn-xLk"/>
+                                    <segue destination="29k-fS-Iqg" kind="show" identifier="segueEventi" id="q7K-a0-TCD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -220,7 +204,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U6-xc-1Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685.60000000000002" y="-1403.7481259370315"/>
+            <point key="canvasLocation" x="542" y="-1405"/>
         </scene>
         <!--Attivita-->
         <scene sceneID="tvI-9B-eGj">
