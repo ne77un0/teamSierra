@@ -11,7 +11,11 @@ import UIKit
 class EventiTableViewController: UITableViewController {
     
     var aName: String?
-    
+    var eventiCinema = ["Ritorno al futuro"]
+    var eventiMusic = ["Musica live","Concerto"]
+    var eventiSport = ["Partita Calcio","Partita Basket"]
+    var eventiFood = ["Pub"]
+    var eventiShopping = ["Fiera"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +32,27 @@ class EventiTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if (aName == "Music") {
+            return eventiMusic.count
+        } else {
+            return eventiSport.count
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath)
-        cell.textLabel?.text = aName
+        
+        if (aName == "Music") {
+            cell.textLabel?.text = eventiMusic[indexPath.row]
+        } else {
+            cell.textLabel?.text = eventiSport[indexPath.row]
+        }
 
         // Configure the cell...
 
