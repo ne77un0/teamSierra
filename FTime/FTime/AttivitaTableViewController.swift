@@ -45,7 +45,7 @@ class AttivitaTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if(segue.identifier == "segue"){
+        if(segue.identifier == "segueEventi"){
             if let indexPath = tableView.indexPathForSelectedRow {
                 let wc = segue.destination as! EventiTableViewController
                 wc.aName = attivitaName[indexPath.row]
