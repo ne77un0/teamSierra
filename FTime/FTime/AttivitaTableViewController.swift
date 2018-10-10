@@ -48,7 +48,7 @@ class AttivitaTableViewController: UITableViewController {
         if(segue.identifier == "segue"){
             if let indexPath = tableView.indexPathForSelectedRow {
                 let wc = segue.destination as! EventiTableViewController
-                    //wc.name = attivitaName[indexPath.row]
+                wc.aName = attivitaName[indexPath.row]
             }
         }
     }
