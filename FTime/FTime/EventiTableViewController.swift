@@ -37,21 +37,33 @@ class EventiTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if (aName == "Music") {
+        if (aName == "Cinema") {
+            return eventiCinema.count
+        } else if (aName == "Music") {
             return eventiMusic.count
-        } else {
+        } else if (aName == "Sport") {
             return eventiSport.count
+        } else if (aName == "Food") {
+            return eventiFood.count
+        } else {
+            return eventiShopping.count
         }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath)
-        
-        if (aName == "Music") {
+
+        if (aName == "Cinema") {
+            cell.textLabel?.text = eventiCinema[indexPath.row]
+        } else if (aName == "Music") {
             cell.textLabel?.text = eventiMusic[indexPath.row]
-        } else {
+        } else if (aName == "Sport") {
             cell.textLabel?.text = eventiSport[indexPath.row]
+        } else if (aName == "Food") {
+            cell.textLabel?.text = eventiFood[indexPath.row]
+        } else {
+            cell.textLabel?.text = eventiShopping[indexPath.row]
         }
 
         // Configure the cell...
@@ -65,8 +77,14 @@ class EventiTableViewController: UITableViewController {
                 let wc = segue.destination as! DettagliViewController
                 if (aName == "Music") {
                     wc.evento = eventiMusic[indexPath.row]
-                } else {
+                } else if (aName == "Music") {
+                    wc.evento = eventiMusic[indexPath.row]
+                } else if (aName == "Sport") {
                     wc.evento = eventiSport[indexPath.row]
+                } else if (aName == "Food") {
+                    wc.evento = eventiFood[indexPath.row]
+                } else {
+                    wc.evento = eventiShopping[indexPath.row]
                 }
                 
             }
