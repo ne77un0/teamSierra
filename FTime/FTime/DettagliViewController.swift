@@ -9,14 +9,14 @@
 import UIKit
 
 class DettagliViewController: UIViewController {
-    var name: String?
+    var evento: String?
     
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = name
+        label.text = evento
         // Do any additional setup after loading the view.
     }
     
