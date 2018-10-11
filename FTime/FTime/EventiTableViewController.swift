@@ -17,12 +17,20 @@ struct EventiMO {
 class EventiTableViewController: UITableViewController {
     
     var aName: String?
+    
     var events: [EventiMO] = []
-    var eventiCinema = ["Ritorno al futuro"]
-    var eventiMusic = ["Musica live","Concerto"]
-    var eventiSport = ["Partita Calcio","Partita Basket"]
-    var eventiFood = ["Pub"]
-    var eventiShopping = ["Fiera"]
+    
+    var eventiCinemaName = ["Ritorno al futuro"]
+    
+    var eventiMusicName = ["Irish Pub","Sagra dei funghi porci", "Sannio Fest"]
+    var eventiMusicType = ["Musica live", "Concerto Trementisti", "Concerto Banda Bardò"]
+    var eventiMusicHour = ["21.30-24.00", "22.00-24.00", "22.30-24.00"]
+    
+    var eventiSportName = ["Partita Calcio","Partita Basket"]
+    
+    var eventiFoodName = ["Pub"]
+    
+    var eventiShoppingName = ["Fiera"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,32 +53,33 @@ class EventiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if (aName == "CINEMA") {
-            return eventiCinema.count
+            return eventiCinemaName.count
         } else if (aName == "MUSIC") {
-            return eventiMusic.count
+            return eventiMusicName.count
         } else if (aName == "SPORT") {
-            return eventiSport.count
+            return eventiSportName.count
         } else if (aName == "FOOD") {
-            return eventiFood.count
+            return eventiFoodName.count
         } else {
-            return eventiShopping.count
+            return eventiShoppingName.count
         }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath) as! EventiTableViewCell
 
         if (aName == "CINEMA") {
-            cell.textLabel?.text = eventiCinema[indexPath.row]
+            cell.labelName.text = eventiCinemaName[indexPath.row]
         } else if (aName == "MUSIC") {
-            cell.textLabel?.text = eventiMusic[indexPath.row]
+            cell.labelName.text = eventiMusicName[indexPath.row]
+            cell.labelType.text = eventiMusicType[indexPath.row]
         } else if (aName == "SPORT") {
-            cell.textLabel?.text = eventiSport[indexPath.row]
+            cell.labelName.text = eventiSportName[indexPath.row]
         } else if (aName == "FOOD") {
-            cell.textLabel?.text = eventiFood[indexPath.row]
+            cell.labelName.text = eventiFoodName[indexPath.row]
         } else {
-            cell.textLabel?.text = eventiShopping[indexPath.row]
+            cell.labelName.text = eventiShoppingName[indexPath.row]
         }
 
         // Configure the cell...
@@ -83,15 +92,15 @@ class EventiTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let wc = segue.destination as! DettagliViewController
                 if (aName == "CINEMA") {
-                    wc.evento = eventiMusic[indexPath.row]
+                    wc.evento = eventiCinemaName[indexPath.row]
                 } else if (aName == "MUSIC") {
-                    wc.evento = eventiMusic[indexPath.row]
+                    wc.evento = eventiMusicName[indexPath.row]
                 } else if (aName == "SPORT") {
-                    wc.evento = eventiSport[indexPath.row]
+                    wc.evento = eventiSportName[indexPath.row]
                 } else if (aName == "FOOD") {
-                    wc.evento = eventiFood[indexPath.row]
+                    wc.evento = eventiFoodName[indexPath.row]
                 } else {
-                    wc.evento = eventiShopping[indexPath.row]
+                    wc.evento = eventiShoppingName[indexPath.row]
                 }
                 
             }

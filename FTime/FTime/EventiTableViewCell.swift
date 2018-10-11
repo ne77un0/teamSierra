@@ -10,6 +10,10 @@ import UIKit
 
 class EventiTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelType: UILabel!
+    @IBOutlet weak var labelHour: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

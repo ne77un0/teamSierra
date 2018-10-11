@@ -201,14 +201,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEventi" rowHeight="161" id="mL1-W3-xdN" customClass="EventiTableViewCell" customModule="FTime" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="161"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEventi" rowHeight="120" id="mL1-W3-xdN" customClass="EventiTableViewCell" customModule="FTime" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mL1-W3-xdN" id="9yl-rP-FAh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrH-cl-ttT">
+                                            <rect key="frame" x="106" y="21" width="253" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oE2-1f-c8R">
+                                            <rect key="frame" x="106" y="51.5" width="253" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMa-Dz-vej">
+                                            <rect key="frame" x="106" y="82" width="253" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lMa-Dz-vej" firstAttribute="top" secondItem="oE2-1f-c8R" secondAttribute="bottom" constant="10" id="B3Y-2e-1E2"/>
+                                        <constraint firstItem="lMa-Dz-vej" firstAttribute="leading" secondItem="9yl-rP-FAh" secondAttribute="leadingMargin" constant="90" id="DHF-pL-Hs3"/>
+                                        <constraint firstItem="MrH-cl-ttT" firstAttribute="top" secondItem="9yl-rP-FAh" secondAttribute="topMargin" constant="10" id="KNP-43-Se8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oE2-1f-c8R" secondAttribute="trailing" id="SaB-CO-gPu"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lMa-Dz-vej" secondAttribute="trailing" id="XeT-Ox-6ju"/>
+                                        <constraint firstItem="MrH-cl-ttT" firstAttribute="leading" secondItem="9yl-rP-FAh" secondAttribute="leadingMargin" constant="90" id="ajH-gS-LXp"/>
+                                        <constraint firstItem="oE2-1f-c8R" firstAttribute="top" secondItem="MrH-cl-ttT" secondAttribute="bottom" constant="10" id="dPb-n5-LlJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MrH-cl-ttT" secondAttribute="trailing" id="hAY-wF-fOA"/>
+                                        <constraint firstItem="oE2-1f-c8R" firstAttribute="leading" secondItem="9yl-rP-FAh" secondAttribute="leadingMargin" constant="90" id="vUq-Vw-9fG"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="labelHour" destination="lMa-Dz-vej" id="4M0-by-I6D"/>
+                                    <outlet property="labelName" destination="MrH-cl-ttT" id="R50-py-kYb"/>
+                                    <outlet property="labelType" destination="oE2-1f-c8R" id="0ZC-ru-G0p"/>
                                     <segue destination="FPg-88-0oh" kind="show" identifier="segueDettagli" id="V0a-YI-7ft"/>
                                 </connections>
                             </tableViewCell>
