@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Impostazioni-->
+        <!--Impostazioni View Controller-->
         <scene sceneID="8nN-mz-FcX">
             <objects>
                 <viewController id="KpH-gJ-eyo" customClass="ImpostazioniViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aU1-cH-73q"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Impostazioni" image="impostazioni_icon" selectedImage="impostazioni_icon" id="eJp-wN-gGL"/>
+                    <tabBarItem key="tabBarItem" title="" image="impostazioni_icon" selectedImage="impostazioni_icon" id="eJp-wN-gGL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDw-jb-T1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,11 +73,11 @@
             </objects>
             <point key="canvasLocation" x="542" y="-645"/>
         </scene>
-        <!--Preferiti-->
+        <!--Navigation Controller-->
         <scene sceneID="Ud9-Tc-u38">
             <objects>
                 <navigationController id="eAY-jN-hB2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Preferiti" image="preferiti_icon" selectedImage="preferiti_icon" id="bqF-jZ-Ygd"/>
+                    <tabBarItem key="tabBarItem" title="" image="preferiti_icon" selectedImage="preferiti_icon" id="bqF-jZ-Ygd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3yM-JF-AO8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -231,11 +231,11 @@
             </objects>
             <point key="canvasLocation" x="541.60000000000002" y="-1405.5472263868066"/>
         </scene>
-        <!--Attivita-->
+        <!--Navigation Controller-->
         <scene sceneID="tvI-9B-eGj">
             <objects>
                 <navigationController id="O0b-By-GlW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Attivita" image="attivita_icon" selectedImage="attivita_icon" id="IpF-M2-Six"/>
+                    <tabBarItem key="tabBarItem" title="" image="attivita_icon" selectedImage="attivita_icon" id="IpF-M2-Six"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOX-By-4Zh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -255,7 +255,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iS4-eq-hyV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="O0b-By-GlW" kind="relationship" relationship="viewControllers" id="Svz-8l-4Pt"/>
