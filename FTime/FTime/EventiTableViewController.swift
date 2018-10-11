@@ -8,9 +8,16 @@
 
 import UIKit
 
+struct EventiMO {
+    var nomeE: String?
+    var tipoE: String?
+    var oraE: String?
+}
+
 class EventiTableViewController: UITableViewController {
     
     var aName: String?
+    var events: [EventiMO] = []
     var eventiCinema = ["Ritorno al futuro"]
     var eventiMusic = ["Musica live","Concerto"]
     var eventiSport = ["Partita Calcio","Partita Basket"]
@@ -37,13 +44,13 @@ class EventiTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if (aName == "Cinema") {
+        if (aName == "CINEMA") {
             return eventiCinema.count
-        } else if (aName == "Music") {
+        } else if (aName == "MUSIC") {
             return eventiMusic.count
-        } else if (aName == "Sport") {
+        } else if (aName == "SPORT") {
             return eventiSport.count
-        } else if (aName == "Food") {
+        } else if (aName == "FOOD") {
             return eventiFood.count
         } else {
             return eventiShopping.count
@@ -54,13 +61,13 @@ class EventiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath)
 
-        if (aName == "Cinema") {
+        if (aName == "CINEMA") {
             cell.textLabel?.text = eventiCinema[indexPath.row]
-        } else if (aName == "Music") {
+        } else if (aName == "MUSIC") {
             cell.textLabel?.text = eventiMusic[indexPath.row]
-        } else if (aName == "Sport") {
+        } else if (aName == "SPORT") {
             cell.textLabel?.text = eventiSport[indexPath.row]
-        } else if (aName == "Food") {
+        } else if (aName == "FOOD") {
             cell.textLabel?.text = eventiFood[indexPath.row]
         } else {
             cell.textLabel?.text = eventiShopping[indexPath.row]
@@ -75,13 +82,13 @@ class EventiTableViewController: UITableViewController {
         if(segue.identifier == "segueDettagli"){
             if let indexPath = tableView.indexPathForSelectedRow {
                 let wc = segue.destination as! DettagliViewController
-                if (aName == "Music") {
+                if (aName == "CINEMA") {
                     wc.evento = eventiMusic[indexPath.row]
-                } else if (aName == "Music") {
+                } else if (aName == "MUSIC") {
                     wc.evento = eventiMusic[indexPath.row]
-                } else if (aName == "Sport") {
+                } else if (aName == "SPORT") {
                     wc.evento = eventiSport[indexPath.row]
-                } else if (aName == "Food") {
+                } else if (aName == "FOOD") {
                     wc.evento = eventiFood[indexPath.row]
                 } else {
                     wc.evento = eventiShopping[indexPath.row]
