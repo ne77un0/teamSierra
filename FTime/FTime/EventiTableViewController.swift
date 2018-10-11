@@ -82,8 +82,8 @@ class EventiTableViewController: UITableViewController {
             cell.labelName.text = eventiCinemaName[indexPath.row]
         } else if (aName == "MUSIC") {
             cell.labelName.text = events[indexPath.row].nameEvent
-            //cell.labelType.text = events[indexPath.row].typeEvent
-            //cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.labelType.text = events[indexPath.row].typeEvent
+            cell.labelHour.text = events[indexPath.row].hourEvent
         } else if (aName == "SPORT") {
             cell.labelName.text = eventiSportName[indexPath.row]
         } else if (aName == "FOOD") {
