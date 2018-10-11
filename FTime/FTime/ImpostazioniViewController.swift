@@ -10,8 +10,39 @@ import UIKit
 
 class ImpostazioniViewController: UIViewController {
     
+   
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var preferencesView: PreferencesView!
+    @IBOutlet weak var profileView: ProfileView!
+    @IBOutlet weak var segment: UISegmentedControl!
+    
+    @IBAction func `switch`(_ sender: Any) {
+        
+        switch segment.selectedSegmentIndex{
+        case 0:
+            NSLog("Profile selected")
+            preferencesView.isHidden = true
+            profileView.isHidden = false
+            
+        case 1:
+            NSLog("Preferences selected")
+            profileView.isHidden = true
+            preferencesView.isHidden = false
+            
+            
+            
+        default:
+            break
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        preferencesView.isHidden = true
+        profileView.isHidden = false
+       
+        
+        
 
         // Do any additional setup after loading the view.
     }
