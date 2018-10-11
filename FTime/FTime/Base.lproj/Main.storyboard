@@ -16,6 +16,16 @@
                     <view key="view" contentMode="scaleToFill" id="WEg-2d-7Zd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pvf-GF-fmf">
+                                <rect key="frame" x="16" y="55" width="349" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Profile"/>
+                                    <segment title="Preferences"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aU1-cH-73q"/>
                     </view>
@@ -23,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDw-jb-T1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="138"/>
+            <point key="canvasLocation" x="-212" y="137.18140929535232"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="r0H-fV-yMb">
@@ -167,7 +177,7 @@
         <scene sceneID="oV7-do-wvm">
             <objects>
                 <tableViewController id="Sgx-0Y-eqm" customClass="AttivitaTableViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ffp-4F-xqj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ffp-4F-xqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,15 +189,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIU-C3-id7">
-                                            <rect key="frame" x="27" y="29" width="322" height="134"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MIU-C3-id7">
+                                            <rect key="frame" x="16" y="11" width="343" height="162"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="MIU-C3-id7" firstAttribute="leading" secondItem="6G8-PL-XGI" secondAttribute="leadingMargin" constant="20" id="5DE-G1-xL5"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="MIU-C3-id7" secondAttribute="trailing" constant="20" id="Kyw-oh-QaJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="MIU-C3-id7" secondAttribute="bottom" constant="20" id="OHd-70-Wv9"/>
-                                        <constraint firstItem="MIU-C3-id7" firstAttribute="top" secondItem="6G8-PL-XGI" secondAttribute="topMargin" constant="20" id="X6L-i5-m1K"/>
+                                        <constraint firstItem="MIU-C3-id7" firstAttribute="leading" secondItem="6G8-PL-XGI" secondAttribute="leadingMargin" id="0hD-KR-ihm"/>
+                                        <constraint firstItem="MIU-C3-id7" firstAttribute="top" secondItem="6G8-PL-XGI" secondAttribute="topMargin" id="0qK-5w-ZqA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MIU-C3-id7" secondAttribute="bottom" id="39I-Gb-f9G"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MIU-C3-id7" secondAttribute="trailing" id="xor-RN-JQr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
