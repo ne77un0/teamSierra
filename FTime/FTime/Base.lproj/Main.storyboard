@@ -251,6 +251,9 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oq3-JA-VvZ" firstAttribute="centerY" secondItem="7m7-ty-bei" secondAttribute="centerY" id="lVa-my-NOH"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
