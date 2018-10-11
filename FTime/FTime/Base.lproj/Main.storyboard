@@ -192,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-212" y="-645"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Eventi-->
         <scene sceneID="rXP-lp-eQq">
             <objects>
                 <tableViewController id="29k-fS-Iqg" customClass="EventiTableViewController" customModule="FTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,11 +201,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEventi" rowHeight="120" id="mL1-W3-xdN" customClass="EventiTableViewCell" customModule="FTime" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEventi" rowHeight="150" id="mL1-W3-xdN" customClass="EventiTableViewCell" customModule="FTime" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mL1-W3-xdN" id="9yl-rP-FAh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrH-cl-ttT">
@@ -252,7 +252,7 @@
                             <outlet property="delegate" destination="29k-fS-Iqg" id="hlP-GK-N41"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="39e-Qf-qaX"/>
+                    <navigationItem key="navigationItem" title="Eventi" id="39e-Qf-qaX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdh-Fr-Y9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

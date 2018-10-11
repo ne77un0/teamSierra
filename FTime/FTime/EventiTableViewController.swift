@@ -8,23 +8,26 @@
 
 import UIKit
 
-struct EventiMO {
-    var nomeE: String?
-    var tipoE: String?
-    var oraE: String?
+struct EventsSTR {
+    var nameEvent: String?
+    var typeEvent: String?
+    var hourEvent: String?
+    var imageEvent: String?
 }
 
 class EventiTableViewController: UITableViewController {
     
     var aName: String?
     
-    var events: [EventiMO] = []
+    var events: [EventsSTR] = []
     
     var eventiCinemaName = ["Ritorno al futuro"]
     
-    var eventiMusicName = ["Irish Pub","Sagra dei funghi porci", "Sannio Fest"]
+    var eventiMusicName = ["Irish Pub","Sagra dei Funghi Porcini", "SannioFest"]
     var eventiMusicType = ["Musica live", "Concerto Trementisti", "Concerto Banda Bardò"]
     var eventiMusicHour = ["21.30-24.00", "22.00-24.00", "22.30-24.00"]
+    var eventiMusicImage = ["cinema.jpg","music.jpg","sport.jpg"]
+    
     
     var eventiSportName = ["Partita Calcio","Partita Basket"]
     
@@ -33,6 +36,12 @@ class EventiTableViewController: UITableViewController {
     var eventiShoppingName = ["Fiera"]
     
     override func viewDidLoad() {
+        
+        for i in 0..<eventiMusicName.count {
+            events.append(EventsSTR(nameEvent: eventiMusicName[i], typeEvent: eventiMusicType[i], hourEvent: eventiMusicHour[i], imageEvent: eventiMusicImage[i]))
+            
+        }
+        
         super.viewDidLoad()
         
         
@@ -55,7 +64,7 @@ class EventiTableViewController: UITableViewController {
         if (aName == "CINEMA") {
             return eventiCinemaName.count
         } else if (aName == "MUSIC") {
-            return eventiMusicName.count
+            return events.count
         } else if (aName == "SPORT") {
             return eventiSportName.count
         } else if (aName == "FOOD") {
@@ -72,8 +81,9 @@ class EventiTableViewController: UITableViewController {
         if (aName == "CINEMA") {
             cell.labelName.text = eventiCinemaName[indexPath.row]
         } else if (aName == "MUSIC") {
-            cell.labelName.text = eventiMusicName[indexPath.row]
-            cell.labelType.text = eventiMusicType[indexPath.row]
+            cell.labelName.text = events[indexPath.row].nameEvent
+            //cell.labelType.text = events[indexPath.row].typeEvent
+            //cell.labelHour.text = events[indexPath.row].hourEvent
         } else if (aName == "SPORT") {
             cell.labelName.text = eventiSportName[indexPath.row]
         } else if (aName == "FOOD") {
