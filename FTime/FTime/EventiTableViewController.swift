@@ -144,8 +144,9 @@ class EventiTableViewController: UITableViewController {
         if(segue.identifier == "segueDettagli"){
             if let indexPath = tableView.indexPathForSelectedRow {
                 let wc = segue.destination as! DettagliViewController
-                if (aName == "CINEMA") {
-                    wc.evento = eventiCinemaName[indexPath.row]
+                wc.evento = events[indexPath.row].nameEvent
+                /*if (aName == "CINEMA") {
+                    wc.evento = events[indexPath.row].nameEvent
                 } else if (aName == "MUSIC") {
                     wc.evento = eventiMusicName[indexPath.row]
                 } else if (aName == "SPORT") {
@@ -154,7 +155,7 @@ class EventiTableViewController: UITableViewController {
                     wc.evento = eventiFoodName[indexPath.row]
                 } else {
                     wc.evento = eventiShoppingName[indexPath.row]
-                }
+                }*/
                 
             }
         }
