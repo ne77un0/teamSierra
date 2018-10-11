@@ -10,6 +10,7 @@ import UIKit
 
 class EventiTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageEvent: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelType: UILabel!
     @IBOutlet weak var labelHour: UILabel!

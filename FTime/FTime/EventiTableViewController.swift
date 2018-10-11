@@ -12,7 +12,7 @@ struct EventsSTR {
     var nameEvent: String?
     var typeEvent: String?
     var hourEvent: String?
-    var imageEvent: String?
+    var imgEvent: String?
 }
 
 class EventiTableViewController: UITableViewController {
@@ -22,6 +22,9 @@ class EventiTableViewController: UITableViewController {
     var events: [EventsSTR] = []
     
     var eventiCinemaName = ["Ritorno al futuro"]
+    var eventiCinemaType = ["Fantastico"]
+    var eventiCinemaHour = ["20.00-22.00"]
+    var eventiCinemaImage = [""]
     
     var eventiMusicName = ["Irish Pub","Sagra dei Funghi Porcini", "SannioFest"]
     var eventiMusicType = ["Musica live", "Concerto Trementisti", "Concerto Banda Bardò"]
@@ -30,16 +33,41 @@ class EventiTableViewController: UITableViewController {
     
     
     var eventiSportName = ["Partita Calcio","Partita Basket"]
+    var eventiSportType = ["",""]
+    var eventiSportHour = ["",""]
+    var eventiSportImage = ["",""]
     
     var eventiFoodName = ["Pub"]
+    var eventiFoodType = [""]
+    var eventiFoodHour = [""]
+    var eventiFoodImage = [""]
     
     var eventiShoppingName = ["Fiera"]
+    var eventiShoppingType = [""]
+    var eventiShoppingHour = [""]
+    var eventiShoppingImage = [""]
     
     override func viewDidLoad() {
-        
-        for i in 0..<eventiMusicName.count {
-            events.append(EventsSTR(nameEvent: eventiMusicName[i], typeEvent: eventiMusicType[i], hourEvent: eventiMusicHour[i], imageEvent: eventiMusicImage[i]))
-            
+        if (aName == "CINEMA") {
+            for i in 0..<eventiCinemaName.count {
+                events.append(EventsSTR(nameEvent: eventiCinemaName[i], typeEvent: eventiCinemaType[i], hourEvent: eventiCinemaHour[i], imgEvent: eventiCinemaImage[i]))
+            }
+        } else if (aName == "MUSIC") {
+            for i in 0..<eventiMusicName.count {
+                events.append(EventsSTR(nameEvent: eventiMusicName[i], typeEvent: eventiMusicType[i], hourEvent: eventiMusicHour[i], imgEvent: eventiMusicImage[i]))
+            }
+        } else if (aName == "SPORT") {
+            for i in 0..<eventiSportName.count {
+                events.append(EventsSTR(nameEvent: eventiSportName[i], typeEvent: eventiSportType[i], hourEvent: eventiSportHour[i], imgEvent: eventiSportImage[i]))
+            }
+        } else if (aName == "FOOD") {
+            for i in 0..<eventiFoodName.count {
+                events.append(EventsSTR(nameEvent: eventiFoodName[i], typeEvent: eventiFoodType[i], hourEvent: eventiFoodHour[i], imgEvent: eventiFoodImage[i]))
+            }
+        } else {
+            for i in 0..<eventiShoppingName.count {
+                events.append(EventsSTR(nameEvent: eventiShoppingName[i], typeEvent: eventiShoppingType[i], hourEvent: eventiShoppingHour[i], imgEvent: eventiShoppingImage[i]))
+            }
         }
         
         super.viewDidLoad()
@@ -56,21 +84,23 @@ class EventiTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
         if (aName == "CINEMA") {
-            return eventiCinemaName.count
+            return events.count
         } else if (aName == "MUSIC") {
             return events.count
         } else if (aName == "SPORT") {
-            return eventiSportName.count
+            return events.count
         } else if (aName == "FOOD") {
-            return eventiFoodName.count
+            return events.count
         } else {
-            return eventiShoppingName.count
+            return events.count
         }
     }
 
@@ -79,17 +109,30 @@ class EventiTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellEventi", for: indexPath) as! EventiTableViewCell
 
         if (aName == "CINEMA") {
-            cell.labelName.text = eventiCinemaName[indexPath.row]
+            cell.labelName.text = events[indexPath.row].nameEvent
+            cell.labelType.text = events[indexPath.row].typeEvent
+            cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.imageEvent.image = UIImage(named: events[indexPath.row].imgEvent!)
         } else if (aName == "MUSIC") {
             cell.labelName.text = events[indexPath.row].nameEvent
             cell.labelType.text = events[indexPath.row].typeEvent
             cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.imageEvent.image = UIImage(named: events[indexPath.row].imgEvent!)
         } else if (aName == "SPORT") {
-            cell.labelName.text = eventiSportName[indexPath.row]
+            cell.labelName.text = events[indexPath.row].nameEvent
+            cell.labelType.text = events[indexPath.row].typeEvent
+            cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.imageEvent.image = UIImage(named: events[indexPath.row].imgEvent!)
         } else if (aName == "FOOD") {
-            cell.labelName.text = eventiFoodName[indexPath.row]
+            cell.labelName.text = events[indexPath.row].nameEvent
+            cell.labelType.text = events[indexPath.row].typeEvent
+            cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.imageEvent.image = UIImage(named: events[indexPath.row].imgEvent!)
         } else {
-            cell.labelName.text = eventiShoppingName[indexPath.row]
+            cell.labelName.text = events[indexPath.row].nameEvent
+            cell.labelType.text = events[indexPath.row].typeEvent
+            cell.labelHour.text = events[indexPath.row].hourEvent
+            cell.imageEvent.image = UIImage(named: events[indexPath.row].imgEvent!)
         }
 
         // Configure the cell...

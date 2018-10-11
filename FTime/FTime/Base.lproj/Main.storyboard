@@ -264,6 +264,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageEvent" destination="oq3-JA-VvZ" id="y3g-Kl-bfD"/>
                                     <outlet property="labelHour" destination="lMa-Dz-vej" id="4M0-by-I6D"/>
                                     <outlet property="labelName" destination="MrH-cl-ttT" id="R50-py-kYb"/>
                                     <outlet property="labelType" destination="oE2-1f-c8R" id="0ZC-ru-G0p"/>
