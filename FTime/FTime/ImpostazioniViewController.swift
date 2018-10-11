@@ -29,17 +29,17 @@ class ImpostazioniViewController: UIViewController {
             profileView.isHidden = true
             preferencesView.isHidden = false
             
-            
-            
         default:
             break
             
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         preferencesView.isHidden = true
         profileView.isHidden = false
+        
        
         
         
